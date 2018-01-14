@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<selector xmlns:android="http://schemas.android.com/apk/res/android">-->
+    <!--<item android:drawable="@drawable/clr_normal" android:state_pressed="false"/>-->
+    <!--<item android:drawable="@drawable/clr_pressed" android:state_pressed="true"/>-->
+<!--</selector>-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--填充背景色 -->
+<solid android:color="#ffff00" />     //solid  指的是背景颜色的设置
+<!--描边 他需要 2个参数，颜色 第二参数 宽度 -->
+<stroke
+    android:width="2dp"
+    android:color="#ff00ff" />
+<!-- 设置弧度  Radius设置所有角的弧度 -->         //radius    指的就是角的弧度
+<corners
+    android:bottomLeftRadius="20dp"
+    android:bottomRightRadius="20dp"
+    android:topLeftRadius="20dp"
+    android:topRightRadius="20dp" />
+
+<!--//同时设置：<corners-->
+<!--android:Radius="20dp"         />     //四个角同时设置-->
+
+<!-- 渐变色 startColor 启示颜色  endColor最终颜色  type类型(如果类型为radial（径向渐变，一个圆心以半径的方式渐变），必须加上   android:gradientRadius="**")-->
+<gradient
+    android:startColor="#ff0000"
+    android:endColor="#ffffff"
+    android:type="linear" />
+
+
+<!--内容与边框的间距-->
+<padding
+    android:bottom="15dp"
+    android:left="15dp"
+    android:right="15dp"
+    android:top="15dp" />
+<!--如果设置了渐变色 那么背景颜色将不显示 -->
+</shape>
