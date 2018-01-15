@@ -200,7 +200,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
         return result;
     }
     public double adaptNum(double num) {
-        return Math.round(num * 1000) / 1000;
+        return Math.round(num * 1000) / 1000.0;
     }
         /**
          * 拼接所有的控制台信息
